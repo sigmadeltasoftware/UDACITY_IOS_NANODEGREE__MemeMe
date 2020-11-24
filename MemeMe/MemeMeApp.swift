@@ -13,8 +13,10 @@ struct MemeMeApp: App {
         WindowGroup {
             NavigationView {
                 ContentView()
+                    .navigationBarTitle("", displayMode: .inline)
+                    
                 logD("Starting MemeMe...")
-            }
+            }.navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }

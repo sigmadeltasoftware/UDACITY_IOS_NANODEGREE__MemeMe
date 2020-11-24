@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct Toolbar: ToolbarContent {
     
@@ -50,6 +51,7 @@ struct Toolbar: ToolbarContent {
             }) {
                 Image(systemName: CAMERA_ICON)
             }
+            .disabled(!UIImagePickerController.isSourceTypeAvailable(.camera))
             
         }
         
