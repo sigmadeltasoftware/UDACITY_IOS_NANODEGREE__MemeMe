@@ -42,6 +42,7 @@ struct ContentView: View {
                     logD("onCameraClicked()")
                 },
                 onShareClicked: {
+                    image = img.asUIImage()
                     logD("onShareClicked()")
                     activeSheet = .share
                 },
