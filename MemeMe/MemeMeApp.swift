@@ -11,7 +11,10 @@ import SwiftUI
 struct MemeMeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+                logD("Starting MemeMe...")
+            }
         }
     }
 }
